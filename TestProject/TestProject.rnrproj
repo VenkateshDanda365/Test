@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>HanvikaFarm</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{b2b9e052-adac-4b38-b12d-442e4d8d6fcb}</ProjectGuid>
+    <Name>TestProject</Name>
+    <RootNamespace>TestProject</RootNamespace>
+    <StartupType>MenuItemDisplay</StartupType>
+    <StartupObject>LedgerTrialBalanceListPage (LedgerTrialBalanceListPage.HanvikaFarm)</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Action Menu Items\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Display Menu Item Extensions\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Service Groups\" />
+    <Folder Include="Services\" />
+    <Folder Include="Simple Queries\" />
+    <Folder Include="Table Extensions\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\CTS_TrailBalanceContract">
+      <SubType>Content</SubType>
+      <Name>CTS_TrailBalanceContract</Name>
+      <Link>Classes\CTS_TrailBalanceContract</Link>
+    </Content>
+    <Content Include="AxClass\CTS_TrailBalanceDP">
+      <SubType>Content</SubType>
+      <Name>CTS_TrailBalanceDP</Name>
+      <Link>Classes\CTS_TrailBalanceDP</Link>
+    </Content>
+    <Content Include="AxClass\HFBalanceSheetContract">
+      <SubType>Content</SubType>
+      <Name>HFBalanceSheetContract</Name>
+      <Link>Classes\HFBalanceSheetContract</Link>
+    </Content>
+    <Content Include="AxClass\HFBalanceSheetController">
+      <SubType>Content</SubType>
+      <Name>HFBalanceSheetController</Name>
+      <Link>Classes\HFBalanceSheetController</Link>
+    </Content>
+    <Content Include="AxClass\HFBalanceSheetDP">
+      <SubType>Content</SubType>
+      <Name>HFBalanceSheetDP</Name>
+      <Link>Classes\HFBalanceSheetDP</Link>
+    </Content>
+    <Content Include="AxClass\HFTrailBalanceContract">
+      <SubType>Content</SubType>
+      <Name>HFTrailBalanceContract</Name>
+      <Link>Classes\HFTrailBalanceContract</Link>
+    </Content>
+    <Content Include="AxClass\HFTrailBalanceDP">
+      <SubType>Content</SubType>
+      <Name>HFTrailBalanceDP</Name>
+      <Link>Classes\HFTrailBalanceDP</Link>
+    </Content>
+    <Content Include="AxClass\HFWarehoseCreateResponse">
+      <SubType>Content</SubType>
+      <Name>HFWarehoseCreateResponse</Name>
+      <Link>Classes\HFWarehoseCreateResponse</Link>
+    </Content>
+    <Content Include="AxClass\HFWarehouseCreateRequest">
+      <SubType>Content</SubType>
+      <Name>HFWarehouseCreateRequest</Name>
+      <Link>Classes\HFWarehouseCreateRequest</Link>
+    </Content>
+    <Content Include="AxClass\HFWarehouseCreateService">
+      <SubType>Content</SubType>
+      <Name>HFWarehouseCreateService</Name>
+      <Link>Classes\HFWarehouseCreateService</Link>
+    </Content>
+    <Content Include="AxClass\SalesEditLinesEventHandler">
+      <SubType>Content</SubType>
+      <Name>SalesEditLinesEventHandler</Name>
+      <Link>Classes\SalesEditLinesEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\TestClassEventHandler">
+      <SubType>Content</SubType>
+      <Name>TestClassEventHandler</Name>
+      <Link>Classes\TestClassEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\TestClassEventHandler2">
+      <SubType>Content</SubType>
+      <Name>TestClassEventHandler2</Name>
+      <Link>Classes\TestClassEventHandler2</Link>
+    </Content>
+    <Content Include="AxClass\TestService">
+      <SubType>Content</SubType>
+      <Name>TestService</Name>
+      <Link>Classes\TestService</Link>
+    </Content>
+    <Content Include="AxClass\TestServiceRequest">
+      <SubType>Content</SubType>
+      <Name>TestServiceRequest</Name>
+      <Link>Classes\TestServiceRequest</Link>
+    </Content>
+    <Content Include="AxClass\TestServiceResponse">
+      <SubType>Content</SubType>
+      <Name>TestServiceResponse</Name>
+      <Link>Classes\TestServiceResponse</Link>
+    </Content>
+    <Content Include="AxFormExtension\LedgerTrialBalanceListPage.HanvikaFarm">
+      <SubType>Content</SubType>
+      <Name>LedgerTrialBalanceListPage.HanvikaFarm</Name>
+      <Link>Form Extensions\LedgerTrialBalanceListPage.HanvikaFarm</Link>
+    </Content>
+    <Content Include="AxFormExtension\SalesEditLines.HanvikaFarm">
+      <SubType>Content</SubType>
+      <Name>SalesEditLines.HanvikaFarm</Name>
+      <Link>Form Extensions\SalesEditLines.HanvikaFarm</Link>
+    </Content>
+    <Content Include="AxFormExtension\SalesTable.HanvikaFarm">
+      <SubType>Content</SubType>
+      <Name>SalesTable.HanvikaFarm</Name>
+      <Link>Form Extensions\SalesTable.HanvikaFarm</Link>
+    </Content>
+    <Content Include="AxFormExtension\SalesTableListPage.HanvikaFarm">
+      <SubType>Content</SubType>
+      <Name>SalesTableListPage.HanvikaFarm</Name>
+      <Link>Form Extensions\SalesTableListPage.HanvikaFarm</Link>
+    </Content>
+    <Content Include="AxMenuExtension\GeneralLedger.HanvikaFarm">
+      <SubType>Content</SubType>
+      <Name>GeneralLedger.HanvikaFarm</Name>
+      <Link>Menu Extensions\GeneralLedger.HanvikaFarm</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplayExtension\LedgerTrialBalanceListPage.HanvikaFarm">
+      <SubType>Content</SubType>
+      <Name>LedgerTrialBalanceListPage.HanvikaFarm</Name>
+      <Link>Display Menu Item Extensions\LedgerTrialBalanceListPage.HanvikaFarm</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\CTS_TrailBalanceReport">
+      <SubType>Content</SubType>
+      <Name>CTS_TrailBalanceReport</Name>
+      <Link>Output Menu Items\CTS_TrailBalanceReport</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\HFBalanceSheet">
+      <SubType>Content</SubType>
+      <Name>HFBalanceSheet</Name>
+      <Link>Output Menu Items\HFBalanceSheet</Link>
+    </Content>
+    <Content Include="AxQuery\HFBalanceSheetQuery">
+      <SubType>Content</SubType>
+      <Name>HFBalanceSheetQuery</Name>
+      <Link>Simple Queries\HFBalanceSheetQuery</Link>
+    </Content>
+    <Content Include="AxQuery\HFTrailBalanceQuery">
+      <SubType>Content</SubType>
+      <Name>HFTrailBalanceQuery</Name>
+      <Link>Simple Queries\HFTrailBalanceQuery</Link>
+    </Content>
+    <Content Include="AxReport\CTS_TrailBalanceReport">
+      <SubType>Content</SubType>
+      <Name>CTS_TrailBalanceReport</Name>
+      <Link>Reports\CTS_TrailBalanceReport</Link>
+    </Content>
+    <Content Include="AxReport\HFBalanceSheetReport">
+      <SubType>Content</SubType>
+      <Name>HFBalanceSheetReport</Name>
+      <Link>Reports\HFBalanceSheetReport</Link>
+    </Content>
+    <Content Include="AxReport\HFTrailBalanceReport">
+      <SubType>Content</SubType>
+      <Name>HFTrailBalanceReport</Name>
+      <Link>Reports\HFTrailBalanceReport</Link>
+    </Content>
+    <Content Include="AxServiceGroup\HFWarehouseCreateServiceGroup">
+      <SubType>Content</SubType>
+      <Name>HFWarehouseCreateServiceGroup</Name>
+      <Link>Service Groups\HFWarehouseCreateServiceGroup</Link>
+    </Content>
+    <Content Include="AxServiceGroup\TestServiceGroup">
+      <SubType>Content</SubType>
+      <Name>TestServiceGroup</Name>
+      <Link>Service Groups\TestServiceGroup</Link>
+    </Content>
+    <Content Include="AxService\HFWarehouseCreateService">
+      <SubType>Content</SubType>
+      <Name>HFWarehouseCreateService</Name>
+      <Link>Services\HFWarehouseCreateService</Link>
+    </Content>
+    <Content Include="AxService\TestService">
+      <SubType>Content</SubType>
+      <Name>TestService</Name>
+      <Link>Services\TestService</Link>
+    </Content>
+    <Content Include="AxTableExtension\SalesTable.HanvikaFarm">
+      <SubType>Content</SubType>
+      <Name>SalesTable.HanvikaFarm</Name>
+      <Link>Table Extensions\SalesTable.HanvikaFarm</Link>
+    </Content>
+    <Content Include="AxTable\CTS_TrailBalanceTmp">
+      <SubType>Content</SubType>
+      <Name>CTS_TrailBalanceTmp</Name>
+      <Link>Tables\CTS_TrailBalanceTmp</Link>
+    </Content>
+    <Content Include="AxTable\HFBalanceSheetTmp">
+      <SubType>Content</SubType>
+      <Name>HFBalanceSheetTmp</Name>
+      <Link>Tables\HFBalanceSheetTmp</Link>
+    </Content>
+    <Content Include="AxTable\HFTrailBalanceTmp">
+      <SubType>Content</SubType>
+      <Name>HFTrailBalanceTmp</Name>
+      <Link>Tables\HFTrailBalanceTmp</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
